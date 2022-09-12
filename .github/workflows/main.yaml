@@ -4,8 +4,8 @@ on: [push]
 
 env:
   WEB_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')/django-docker_web:latest
-  NGINX_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY) | tr '[:upper:]' '[:lower:]'/django-docker_nginx:latest
-  PGSQL_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY) | tr '[:upper:]' '[:lower:]'/postgres:14.5
+  NGINX_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY) | tr '[:upper:]' '[:lower:]')/django-docker_nginx:latest
+  PGSQL_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY) | tr '[:upper:]' '[:lower:]')/postgres:14.5
 
 jobs:
   build:
