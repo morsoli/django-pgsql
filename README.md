@@ -9,3 +9,6 @@ docker-compose -f docker-compose.prod.yaml exec web python manage.py collectstat
 `docker-compose -f docker-compose.prod.yaml logs -f`
 ### Stop product service
 `docker-compose -f docker-compose.prod.yaml down -v`
+
+## 利用 GitHub Action， 接入CI/CD
+
